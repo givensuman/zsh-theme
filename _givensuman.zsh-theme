@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-# appa.zsh-theme
+# _givensuman.zsh-theme
 # a tidy lil zsh theme
 
 # Set required options
@@ -68,8 +68,8 @@ precmd() {
 }
 
 # Define prompts
-ICON=${APPA_ZSH_THEME_PROMPT_ICON:-"󰄛"}
-COLOR=${APPA_ZSH_THEME_PROMPT_COLOR:-"blue"}
+ICON=${ZSH_THEME_PROMPT_ICON:-"󰄛"}
+COLOR=${ZSH_THEME_PROMPT_COLOR:-"blue"}
 PROMPT="%(?.%F{${COLOR}}.%F{red})${ICON}%f " # Display a red prompt char on failure
 RPROMPT="%F{8}${SSH_TTY:+%n@%m}%f" # Display username if connected via SSH
 
